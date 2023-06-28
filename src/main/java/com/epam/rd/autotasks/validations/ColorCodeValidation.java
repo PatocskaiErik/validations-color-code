@@ -8,12 +8,9 @@ public class ColorCodeValidation {
         if(color == null) {
             return false;
         }
-
         String regex = "^#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})$";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(color);
-
         return matcher.matches();
-
     }
 }
